@@ -26,3 +26,21 @@ This repository contains an NLP-based chatbot that utilizes state-of-the-art mod
    ```bash
    git clone git@github.com:tacocat0200/NLP_Chatbot.git
    cd NLP_Chatbot
+## Usage
+
+The NLP chatbot can be used to interact with users, understand their queries, and provide insightful responses. Below are the key functionalities of the chatbot based on the project developments:
+
+**Starting the Chatbot**:
+   To initiate the chatbot, run the following command in your terminal:
+
+   ```bash
+   python chatbot.py
+   ```
+Interacting with the Chatbot:
+
+Simply type your query in the console.
+For example, you might ask:
+"What are the latest trends in customer support?"
+"Can you analyze the sentiment of my message?"
+The chatbot will analyze your input and provide a response based on its training.
+Configuration Options: Ensure to review and adjust the settings in config.json and aws_config.json if needed, to tailor the chatbot's behavior and deployment settings to your requirements.
