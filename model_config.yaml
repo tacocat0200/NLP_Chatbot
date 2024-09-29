@@ -1,0 +1,37 @@
+model:
+  type: "BERT"
+  base_model: "bert-base-uncased"
+  num_layers: 12
+  hidden_size: 768
+  intermediate_size: 3072
+  num_attention_heads: 12
+  dropout_rate: 0.1
+
+training:
+  batch_size: 32
+  learning_rate: 5e-5
+  num_epochs: 3
+  weight_decay: 0.01
+  gradient_accumulation_steps: 1
+
+tokenizer:
+  type: "BertTokenizer"
+  max_length: 512
+  padding: "max_length"
+  truncation: true
+
+data:
+  train_file: "data/train_dataset.csv"
+  val_file: "data/val_dataset.csv"
+  test_file: "data/test_dataset.csv"
+  max_samples: 10000
+
+logging:
+  log_dir: "logs/"
+  save_model_dir: "models/chatbot/"
+  save_steps: 500
+
+misc:
+  use_mixed_precision: true
+  device: "cuda"
+  seed: 42

@@ -1,0 +1,44 @@
+version: '3.8'  # Specify the Docker Compose file version
+
+services:
+  chatbot:
+    image: your-docker-image-name:latest  # The name of your chatbot Docker image
+    build:
+      context: .
+      dockerfile: Dockerfile  # Specify the Dockerfile for building the image
+    ports:
+      - "5000:5000"  # Map host port 5000 to container port 5000
+    environment:
+      - ENV_VAR_NAME=value  # Example environment variable
+    volumes:
+      - ./data:/app/data  # Mount the data directory to the container
+    networks:
+      - nlp_network  # Specify the network for this service
+
+  # Optional: Database service
+  mongodb:
+    image: mongo:latest  # Use the official MongoDB image
+    ports:
+      - "27017:27017"  # Map host port 27017 to container port 27017
+    volumes:
+      - mongodb_data:/data/db  # Persistent storage for MongoDB data
+    networks:
+      - nlp_network  # Specify the network for this service
+
+  # Optional: Frontend service (if applicable)
+  frontend:
+    build:
+      context: ./frontend  # Directory containing the frontend Dockerfile
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"  # Map host port 3000 to container port 3000
+    networks:
+      - nlp_network  # Specify the network for this service
+
+# Define volumes
+volumes:
+  mongodb_data:  # Named volume for MongoDB data
+
+# Define networks
+networks:
+  nlp_network:  # Custom network for your services

@@ -1,0 +1,45 @@
+{
+    "data": [
+      {
+        "message": "I love this product! It works wonderfully.",
+        "true_labels": "positive"
+      },
+      {
+        "message": "This is the worst experience I've ever had.",
+        "true_labels": "negative"
+      },
+      {
+        "message": "It's okay, but I've seen better.",
+        "true_labels": "neutral"
+      },
+      {
+        "message": "I'm not sure if I would recommend this.",
+        "true_labels": "neutral"
+      },
+      {
+        "message": "Absolutely terrible service! Will not return.",
+        "true_labels": "negative"
+      },
+      {
+        "message": "Best decision I ever made!",
+        "true_labels": "positive"
+      },
+      {
+        "message": "Just average, nothing special.",
+        "true_labels": "neutral"
+      },
+      {
+        "message": "Fantastic! Exceeded my expectations.",
+        "true_labels": "positive"
+      },
+      {
+        "message": "Disappointed with the quality.",
+        "true_labels": "negative"
+      },
+      {
+        "message": "I feel indifferent about this.",
+        "true_labels": "neutral"
+      }
+    ]
+  }
+  

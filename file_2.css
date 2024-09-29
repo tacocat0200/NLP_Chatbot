@@ -1,0 +1,25 @@
+/* Animations */
+.message {
+    transition: transform 0.2s;
+}
+
+.message:hover {
+    transform: scale(1.02);
+}
+
+/* Media queries for responsive design */
+@media (max-width: 600px) {
+    .chat-container {
+        width: 100%; /* Full width on small screens */
+    }
+}
+
+/* Notification styles */
+.notification {
+    background-color: #ffeb3b; /* Yellow for notifications */
+    color: #000;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+}

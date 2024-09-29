@@ -1,0 +1,11 @@
+conversation_id	turn_number	speaker	message	intent	sentiment	topic	response
+1	1	user	"Hello, I need help with my account."	Greeting	neutral	Account	Hi! I'd be happy to help you with your account. What seems to be the issue?
+1	2	bot	Hi! I'd be happy to help you with your account. What seems to be the issue?				
+1	3	user	I'm unable to reset my password.	PasswordReset	frustrated	Account	I'm sorry to hear that you're having trouble resetting your password. Let's get that sorted out.
+1	4	bot	I'm sorry to hear that you're having trouble resetting your password. Let's get that sorted out.				
+2	1	user	The app crashes every time I try to open it.	TechnicalIssue	frustrated	Technical Support	I'm sorry you're experiencing crashes with the app. Could you provide more details or any error messages you see?
+2	2	bot	I'm sorry you're experiencing crashes with the app. Could you provide more details or any error messages you see?				
+2	3	user	"Sure, it shows an error code 504."	ErrorReporting	neutral	Technical Support	Thank you for the information. Please try reinstalling the app and let me know if the issue persists.
+2	4	bot	Thank you for the information. Please try reinstalling the app and let me know if the issue persists.				
+3	1	user	"Great service, I'm very happy!"	Feedback	positive	General Feedback	Thank you for your kind words! We're glad to hear you're happy with our service.
+3	2	bot	Thank you for your kind words! We're glad to hear you're happy with our service.				
