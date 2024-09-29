@@ -1,0 +1,19 @@
+{
+    "aws_access_key_id": "YOUR_AWS_ACCESS_KEY_ID",
+    "aws_secret_access_key": "YOUR_AWS_SECRET_ACCESS_KEY",
+    "region": "us-west-2",                 
+    "s3": {
+      "bucket_name": "your-bucket-name",   
+      "model_path": "models/chatbot_model/" 
+    },
+    "dynamodb": {
+      "table_name": "ChatbotConversations", 
+      "read_capacity_units": 5,              
+      "write_capacity_units": 5              
+    },
+    "lambda": {
+      "function_name": "ChatbotFunction",    
+      "timeout": 30                           
+    }
+  }
+  
