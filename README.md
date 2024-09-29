@@ -15,9 +15,9 @@ This repository contains an NLP-based chatbot that utilizes state-of-the-art mod
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Configuration](#configuration)
+<!--- [Configuration](#configuration)
 - [Contributing](#contributing)
-- [License](#license)
+- [License](#license)-->
 
 ## Installation
 
